@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/imges/faviconV2.ico" type="image/x-icon">
+    <title>Kakao Clone</title>
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header class="header-area">
+        <div class="header-wrap">
+            <div class="header-items">
+                <h1 class="header-title">
+                    <a href="./home.html">
+                        <img class="ico-logo" src="../assets/imges/kakao-logo.png" alt="kakao-logo">
+                    </a>
+                    <span class="screen-out">kakao</span>
+                </h1>
+                <nav class="header-menu-group">
+                    <ul class="header-menu-list">
+                        <li class="header-menu-item">
+                            <a class="link-menu" href="javascript:;">카카오</a>
+                            <!-- 서브메뉴 -->
+                            <ul class="sub-menu-list">
+                                <li class="sub-menu-item">
+                                    <a class="sub-link-culture" href="#">카카오문화</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a class="sub-link-community" href="#">공동체</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a class="sub-link-history" href="#">히스토리</a>
+                                </li>
+                            </ul>
+                            <!-- !서브메뉴 -->
+                        </li>
+
+                        <li class="header-menu-item">
+                            <a class="link-menu" href="#">뉴스</a>
+                        </li>
+
+                        <li class="header-menu-item">
+                            <a class="link-menu" href="javascript:;">기술과 서비스</a>
+                            <!-- 서브메뉴 -->
+                            <ul class="sub-menu-list">
+                                <li class="sub-menu-item">
+                                    <a class="sub-link-culture" href="#">기술</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a class="sub-link-community" href="#">서비스</a>
+                                </li>
+                            </ul>
+                            <!-- !서브메뉴 -->
+                        </li>
+
+                        <li class="header-menu-item">
+                            <a class="link-menu" href="javascript:;">약속과 책임</a>
+                            <!-- 서브메뉴 -->
+                            <ul class="sub-menu-list">
+                                <li class="sub-menu-item">
+                                    <a class="sub-link-culture" href="#">ESG</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a class="sub-link-community" href="#">소셜임팩트</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a class="sub-link-community" href="#">디지털 권리</a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a class="sub-link-community" href="#">AI 윤리</a>
+                                </li>
+                            </ul>
+                            <!-- !서브메뉴 -->
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-menu-util">
+                    <button type="button" class="btn-search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-search">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                    <button type="button" class="btn-language">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-globe">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                            </path>
+                        </svg>
+                    </button>
+                    <button type="button" class="btn-theme">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-moon">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+
+
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="day-header-wrap hidden">
+            <div class="day-item-group">
+                <img class="header-ico-day" src="../assets/imges/ico-date14.png" alt="ico-date14">
+                <span class="header-day-txt">오늘의 카카오</span>
+            </div>
+        </div>
+    </header>
+    <!-- !헤더 -->
+    <div class="container">
+
+        <!-- 메인 타이틀 -->
+        <main class="main-area">
+            <p class="date-area">
+                <span class="main-title">
+                    <img class="img-date" src="../assets/imges/ico_date14.gif" alt="ico-date">
+                    <span class="main-title-txt">
+                        오늘의 카카오
+                    </span>
+                </span>
+                <span class="main-date-txt">10월14일 금요일 소식입니다.</span>
+            </p>
+            <!-- !메인 타이틀 -->
+
+            <!-- 홈 카드 -->
+            <div class="home-content">
+                <div class="section-home">
+
+                    <div class="wrap-item">
+                        <div class="main-card">
+                            <div class="item-title">
+                                <div class="corn-notice">
+                                    <img class="ico-notice" src="../assets/imges/ico-notice.png" alt="ico-notice">
+                                    <span class="corn-txt">공지사항</span>
+                                </div>
+                                <div class="corn-title">타이틀</div>
+                                <div class="corn-hash">#해시태그</div>
+                            </div>
+                            <div class="card-img">
+                                <img class="card-notice-img" src="https://via.placeholder.com/400" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="wrap-item">
+                        <div class="mini-card-area">
+                            <div class="item-mini-card" style="left: 0px; top: 0px;">
+                                <div class="item-title">
+                                    <div class="corn-notice">
+                                        <img class="ico-notice" src="../assets/imges/ico-notice.png" alt="ico-notice">
+                                        <span class="corn-txt">공지사항</span>
+                                    </div>
+                                    <div class="corn-title">타이틀</div>
+                                    <div class="corn-hash">#해시태그</div>
+                                </div>
+                                <div class="card-img">
+                                    <img class="card-notice-img" src="https://via.placeholder.com/400" alt="">
+                                </div>
+                            </div>
+                            <div class="item-mini-card-txt" style="left: 340px; top: 0px;">
+                                <div class=" item-title">
+                                    <div class="corn-notice">
+                                        <img class="ico-notice" src="../assets/imges/ico-notice.png" alt="ico-notice">
+                                        <span class="corn-txt">공지사항</span>
+                                    </div>
+                                    <div class="corn-title">타이틀</div>
+                                    <div class="corn-hash">#해시태그</div>
+                                </div>
+                            </div>
+                            <div class="item-mini-card" style="left: 0px; top: 430px;">
+                                <div class="item-title">
+                                    <div class="corn-notice">
+                                        <img class="ico-notice" src="../assets/imges/ico-notice.png" alt="ico-notice">
+                                        <span class="corn-txt">공지사항</span>
+                                    </div>
+                                    <div class="corn-title">타이틀</div>
+                                    <div class="corn-hash">#해시태그</div>
+                                </div>
+                                <div class="card-img">
+                                    <img class="card-notice-img" src="https://via.placeholder.com/400" alt="">
+                                </div>
+                            </div>
+                            <div class="item-mini-card" style="left: 340px; top: 215px;">
+                                <div class="item-title">
+                                    <div class="corn-notice">
+                                        <img class="ico-notice" src="../assets/imges/ico-notice.png" alt="ico-notice">
+                                        <span class="corn-txt">공지사항</span>
+                                    </div>
+                                    <div class="corn-title">타이틀</div>
+                                    <div class="corn-hash">#해시태그</div>
+                                </div>
+                                <div class="card-img">
+                                    <img class="card-notice-img" src="https://via.placeholder.com/400" alt="">
+                                </div>
+                            </div>
+                            <div class="item-mini-card-txt" style="left: 340px; top: 650px;">
+                                <div class="item-title">
+                                    <div class="corn-notice">
+                                        <img class="ico-notice" src="../assets/imges/ico-notice.png" alt="ico-notice">
+                                        <span class="corn-txt">공지사항</span>
+                                    </div>
+                                    <div class="corn-title">타이틀</div>
+                                    <div class="corn-hash">#해시태그</div>
+                                </div>
+
+                            </div>
+                            <div class="item-mini-card-txt" style="left: 0px; top: 860px;">
+                                <div class="item-title">
+                                    <div class="corn-notice">
+                                        <img class="ico-notice" src="../assets/imges/ico-notice.png" alt="ico-notice">
+                                        <span class="corn-txt">공지사항</span>
+                                    </div>
+                                    <div class="corn-title">타이틀</div>
+                                    <div class="corn-hash">#해시태그</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- !홈 카드 -->
+
+            <div class="main-banner">
+                <div class="banner-title">
+                    기술과 사람으로 더 나은 세상을 만듭니다.
+                </div>
+                <div class="banner-btn">
+                    <a href="#" class="banner-btn-link">
+                        카카오문화 바로가기
+                        <svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+                <img class="banner-img" src="../assets/imges/bg_home_culture_210325.png" alt="">
+            </div>
+
+            <!-- 홈 카드 -->
+            <div class="home-content-bottom">
+                <div class="section-home">
+                    <div class="wrap-item">
+                        <div class="mini-card-area">
+
+                            <div class="item-mini-card-txt" style="left: 0px; top: 0px;">
+                                <div class=" item-title">
+                                    <div class="corn-notice">
+                                        <img class="ico-notice" src="../assets/imges/ico-notice.png" alt="ico-notice">
+                                        <span class="corn-txt">공지사항</span>
+                                    </div>
+                                    <div class="corn-title">타이틀</div>
+                                    <div class="corn-hash">#해시태그</div>
+                                </div>
+                            </div>
+                            <div class="item-mini-card" style="left: 340px; top: 0px;">
+                                <div class="item-title">
+                                    <div class="corn-notice">
+                                        <img class="ico-notice" src="../assets/imges/ico-notice.png" alt="ico-notice">
+                                        <span class="corn-txt">공지사항</span>
+                                    </div>
+                                    <div class="corn-title">타이틀</div>
+                                    <div class="corn-hash">#해시태그</div>
+                                </div>
+                                <div class="card-img">
+                                    <img class="card-notice-img" src="https://via.placeholder.com/400" alt="">
+                                </div>
+                            </div>
+                            <div class="item-mini-card-txt" style="left: 0px; top: 220px;">
+                                <div class="item-title">
+                                    <div class="corn-notice">
+                                        <img class="ico-notice" src="../assets/imges/ico-notice.png" alt="ico-notice">
+                                        <span class="corn-txt">공지사항</span>
+                                    </div>
+                                    <div class="corn-title">타이틀</div>
+                                    <div class="corn-hash">#해시태그</div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="wrap-item">
+                        <div class="main-card">
+                            <div class="item-title">
+                                <div class="corn-notice">
+                                    <img class="ico-notice" src="../assets/imges/ico-notice.png" alt="ico-notice">
+                                    <span class="corn-txt">공지사항</span>
+                                </div>
+                                <div class="corn-title">타이틀</div>
+                                <div class="corn-hash">#해시태그</div>
+                            </div>
+                            <div class="card-img">
+                                <img class="card-notice-img" src="https://via.placeholder.com/400" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- !홈 카드 -->
+
+            <!-- 하단배너 -->
+            <div class="item-etc-area">
+                <a href="#" class="link-service">
+                    <div class="link-item1">
+                        <span class="service-title">사람과 기술로 일상을 돕는 카카오 서비스</span>
+                        <div class="link-btn-service">
+                            <div class="btn-service">
+                                서비스 바로가기
+                                <svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <img src="../assets/imges/bg_home_service.png" alt="ico-service">
+                    </div>
+                </a>
+
+                <a href="#" class="link-crew">
+                    <div class="link-item2">
+                        <span class="crew-title">세상만사에 관심이 많다면, 당신은 이미 카카오 크루</span>
+                        <div class="link-btn-crew">
+                            <div class="btn-crew">
+                                인재영입 바로가기
+                                <svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <img src="../assets/imges/bg_home_recruit.png" alt="ico-crew">
+                    </div>
+                </a>
+            </div>
+            <!-- !하단배너 -->
+
+            <!-- 소식모아보기 -->
+            <a class="see-all-btn" href="#">
+                <div class="see-all">
+                    <span class="see-all-txt">
+                        카카오 소식 모아보기
+                    </span>
+                </div>
+            </a>
+            <!-- !소식모아보기 -->
+
+            <!-- top 버튼 -->
+            <div class="top-btn-area">
+                <a class="top-btn" href="#">
+                    <svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div <!-- !top 버튼 -->
+        </main>
+    </div>
+    <footer class="footer-area">
+        <!-- 하단정보 -->
+        <div class="section-area">
+            <section class="section-service">
+                <ul class="service-menu">
+                    <a class="menu-title-link" href="">카카오</a>
+                    <li class="service-item">
+                        <a class="service-item-link" href="">카카오 문화</a>
+                    </li>
+                    <li class="service-item">
+                        <a class="service-item-link" href="">공동체</a>
+                    </li>
+                    <li class="service-item">
+                        <a class="service-item-link" href="">히스토리</a>
+                    </li>
+                </ul>
+                <ul class="service-menu">
+                    <a class="menu-title-link" href="">뉴스</a>
+                </ul>
+                <ul class="service-menu">
+                    <a class="menu-title-link" href="">기술과 서비스</a>
+                    <li class="service-item">
+                        <a class="service-item-link" href="">기술</a>
+                    </li>
+                    <li class="service-item">
+                        <a class="service-item-link" href="">서비스</a>
+                    </li>
+                </ul>
+                <ul class="service-menu">
+                    <a class="menu-title-link" href="">약속과 책임</a>
+                    <li class="service-item">
+                        <a class="service-item-link" href="">ESG</a>
+                    </li>
+                    <li class="service-item">
+                        <a class="service-item-link" href="">소셜임팩트</a>
+                    </li>
+                    <li class="service-item">
+                        <a class="service-item-link" href="">디지털 권리</a>
+                    </li>
+                    <li class="service-item">
+                        <a class="service-item-link" href="">AI 윤리</a>
+                    </li>
+                </ul>
+                <ul class="service-menu">
+                    <a class="menu-title-link" href="">투자정보</a>
+                    <li class="service-item">
+                        <a class="service-item-link" href="">기업지배구조</a>
+                    </li>
+                    <li class="service-item">
+                        <a class="service-item-link" href="">주가정보</a>
+                    </li>
+                    <li class="service-item">
+                        <a class="service-item-link" href="">재무정보</a>
+                    </li>
+                    <li class="service-item">
+                        <a class="service-item-link" href="">IR행사</a>
+                    </li>
+                    <li class="service-item">
+                        <a class="service-item-link" href="">공시정보</a>
+                    </li>
+                    <li class="service-item">
+                        <a class="service-item-link" href="">공고</a>
+                    </li>
+                </ul>
+
+                <div class="service-menu-group">
+                    <ul class="service-menu">
+                        <a class="menu-title-link" href="">고객센터</a>
+                        <li class="service-item">
+                            <a class="service-item-link" href="">
+                                카카오 고객센터
+                                <svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="service-item">
+                            <a class="service-item-link" href="">
+                                Daum 고객센터
+                                <svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="service-sigle-link">
+                        <a class="menu-title-link" href="">
+                            인재영입
+                            <svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="service-sigle-link">
+                        <a class="menu-title-link" href="">
+                            카카오계정
+                            <svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+            </section>
+            <section class="section-relation">
+                <div class="info-group">
+                    <div class="wrap-info" style="margin-left: 0;">
+                        <a href="#" class="info-link">
+                            이용약관
+                            <svg class="chevron-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="18 15 12 9 6 15"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="wrap-info">
+                        <a href="#" class="info-link black-info">
+                            위치기반서비스이용약관
+                            <svg class="chevron-up up-ico-ge" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="18 15 12 9 6 15"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="wrap-info">
+                        <a href="#" class="info-link black-info">
+                            개인정보처리방침
+                            <svg class="chevron-up up-ico-ge" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="18 15 12 9 6 15"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="wrap-info">
+                        <a href="#" class="info-link">
+                            운영정책
+                        </a>
+                    </div>
+                    <div class="wrap-info">
+                        <a href="#" class="info-link">
+                            청소년보호정책
+                            <svg class="chevron-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="18 15 12 9 6 15"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="wrap-info">
+                        <a href="#" class="info-link">
+                            브랜드보호정책
+                        </a>
+                    </div>
+                    <div class="wrap-info">
+                        <a href="#" class="info-link">
+                            권리침해신고안내
+                        </a>
+                    </div>
+                    <div class="wrap-info">
+                        <a href="#" class="info-link">
+                            공지사항
+                            <svg class="chevron-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="18 15 12 9 6 15"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="wrap-info">
+                        <a href="#" class="info-link">
+                            사이버윤리실
+                        </a>
+                    </div>
+                    <div class="wrap-info">
+                        <a href="#" class="info-link">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+                <div class="wrap-relation">
+                    <a href="#" class="relation-btn">
+                        관련사이트
+                        <svg class="plus-ico" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                    </a>
+                </div>
+                <div class="txt-copyright">
+                    ©
+                    <a class="txt-copyright-link" href="http://127.0.0.1:5500/docs/home.html#">kakao Corp.</a>
+                    All rights reserved.
+                </div>
+            </section>
+        </div>
+    </footer>
+    <!-- !메인 -->
+    <script src="../js/nav-menu.js"></script>
+</body>
+
+</html>
