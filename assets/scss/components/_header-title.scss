@@ -1,0 +1,125 @@
+.header-area {
+  width: 100%;
+  top: 0;
+  z-index: 2000;
+  background-color: white;
+  position: fixed;
+  transition: top 0.2s ease-in-out;
+  &.hidden {
+    top: -72px;
+  }
+
+  .header-wrap {
+    border-bottom: none;
+    .header-items {
+      max-width: 1296px;
+      margin: 0 auto;
+      padding: 18px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .ico-logo {
+        width: 74px;
+      }
+      .header-menu-group {
+        .header-menu-list {
+          display: flex;
+          &:hover li > a {
+            color: grey;
+          }
+
+          .header-menu-item {
+            font-size: 16px;
+            font-weight: 500;
+
+            a {
+              color: black;
+
+              &:hover {
+                color: black;
+              }
+            }
+
+            .link-menu {
+              padding: 24px 28px;
+            }
+
+            .sub-menu-list {
+              position: absolute;
+              display: flex;
+              justify-content: space-between;
+              height: 50px;
+              top: 60px;
+              padding: 0 15px;
+              background-color: black;
+              display: none;
+              justify-content: space-between;
+              align-items: center;
+              border-radius: 40px;
+            }
+
+            .sub-menu-item {
+              a {
+                color: white;
+                font-weight: 00;
+                display: block;
+                margin-left: 15px;
+                margin-right: 15px;
+              }
+            }
+          }
+          .active > .sub-menu-list {
+            display: flex;
+          }
+        }
+      }
+      .header-menu-util {
+        button {
+          width: 36px;
+          height: 36px;
+          border: 0;
+          background-color: transparent;
+          cursor: pointer;
+
+          svg {
+            width: 22px;
+            height: 22px;
+            stroke-width: 1.5px;
+          }
+        }
+        .btn-language {
+          margin-left: 12px;
+        }
+        .btn-theme {
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+
+  .day-header-wrap {
+    position: sticky;
+    top: -72px;
+    border-bottom: 1px solid #eee;
+    &.hidden {
+      display: none;
+    }
+    .day-item-group {
+      max-width: 1296px;
+      margin: 0 auto;
+      padding: 18px 0;
+      display: flex;
+      align-items: center;
+      .header-ico-day {
+        width: 40px;
+        height: 40px;
+      }
+      .header-day-txt {
+        font-size: 20px;
+        font-weight: 800;
+        margin-left: 10px;
+      }
+    }
+  }
+}

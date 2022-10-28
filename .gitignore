@@ -169,6 +169,3 @@ yarn-error.log
 .eslintrc.json
 .prettierignore
 .prettierrc.json
-
-#sass
-assets/
