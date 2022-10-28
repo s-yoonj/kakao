@@ -1,3 +1,1 @@
-# kakao
-
 kakao webpage clone
